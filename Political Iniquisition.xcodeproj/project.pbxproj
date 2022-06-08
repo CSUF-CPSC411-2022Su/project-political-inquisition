@@ -19,6 +19,8 @@
 		7A53A6FE285148E9000EF315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A53A6D3285148E9000EF315 /* Assets.xcassets */; };
 		7A53A70E285149E5000EF315 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7A53A70D285149E5000EF315 /* .gitignore */; };
 		7A53A71028514A1D000EF315 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 7A53A70F28514A1D000EF315 /* .gitattributes */; };
+		7A76DB9728514E100053D794 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A76DB9628514E100053D794 /* Map.swift */; };
+		7A76DB9828514E100053D794 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A76DB9628514E100053D794 /* Map.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,7 @@
 		7A53A6F7285148E9000EF315 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		7A53A70D285149E5000EF315 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7A53A70F28514A1D000EF315 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		7A76DB9628514E100053D794 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,7 @@
 				7A53A6D1285148E7000EF315 /* Political_IniquisitionApp.swift */,
 				7A53A6D2285148E7000EF315 /* ContentView.swift */,
 				7A53A6D3285148E9000EF315 /* Assets.xcassets */,
+				7A76DB9628514E100053D794 /* Map.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -308,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A53A6FB285148E9000EF315 /* ContentView.swift in Sources */,
+				7A76DB9728514E100053D794 /* Map.swift in Sources */,
 				7A53A6F9285148E9000EF315 /* Political_IniquisitionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A53A6FC285148E9000EF315 /* ContentView.swift in Sources */,
+				7A76DB9828514E100053D794 /* Map.swift in Sources */,
 				7A53A6FA285148E9000EF315 /* Political_IniquisitionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
