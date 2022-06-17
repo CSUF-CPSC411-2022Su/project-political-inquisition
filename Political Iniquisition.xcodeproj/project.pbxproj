@@ -20,6 +20,8 @@
 		7A53A70E285149E5000EF315 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7A53A70D285149E5000EF315 /* .gitignore */; };
 		7A53A71028514A1D000EF315 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 7A53A70F28514A1D000EF315 /* .gitattributes */; };
 		7A53A71228514DB9000EF315 /* Algo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A71128514DB9000EF315 /* Algo.swift */; };
+		7A53A7562857FF97000EF315 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A7552857FF97000EF315 /* ContentView.swift */; };
+		7A53A75828595C19000EF315 /* PoliticalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A75728595C19000EF315 /* PoliticalApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		7A53A70D285149E5000EF315 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7A53A70F28514A1D000EF315 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		7A53A71128514DB9000EF315 /* Algo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algo.swift; sourceTree = "<group>"; };
+		7A53A7552857FF97000EF315 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7A53A75728595C19000EF315 /* PoliticalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticalApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +96,8 @@
 		7A53A6CB285148E7000EF315 = {
 			isa = PBXGroup;
 			children = (
-				7A53A71128514DB9000EF315 /* Algo.swift */,
+				7A53A75728595C19000EF315 /* PoliticalApp.swift */,
+				7A53A7552857FF97000EF315 /* ContentView.swift */,
 				7A53A70F28514A1D000EF315 /* .gitattributes */,
 				7A53A70D285149E5000EF315 /* .gitignore */,
 				7A53A6D0285148E7000EF315 /* Shared */,
@@ -106,6 +111,7 @@
 		7A53A6D0285148E7000EF315 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				7A53A71128514DB9000EF315 /* Algo.swift */,
 				7A53A6D1285148E7000EF315 /* Political_IniquisitionApp.swift */,
 				7A53A6D2285148E7000EF315 /* ContentView.swift */,
 				7A53A6D3285148E9000EF315 /* Assets.xcassets */,
@@ -312,6 +318,8 @@
 			files = (
 				7A53A71228514DB9000EF315 /* Algo.swift in Sources */,
 				7A53A6FB285148E9000EF315 /* ContentView.swift in Sources */,
+				7A53A7562857FF97000EF315 /* ContentView.swift in Sources */,
+				7A53A75828595C19000EF315 /* PoliticalApp.swift in Sources */,
 				7A53A6F9285148E9000EF315 /* Political_IniquisitionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
