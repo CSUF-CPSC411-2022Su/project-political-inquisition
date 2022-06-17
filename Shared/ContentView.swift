@@ -15,23 +15,6 @@ struct ContentView: View {
     var body: some View {
                 GeometryReader { geometry in
                     VStack {
-                        
-                        /*List {
-                         Section(header: Text("Crosswalk")) {
-                             Text("Crosswalk name")
-                             Text("Crosswalk address")
-                         }
-                         Section(header: Text("Volunteer")) {
-                             Text("Volunteer")
-                             DisclosureGroup(content: {
-                                 Text("Minors")
-                                 Text("Adults")
-                                 Text("Seniors")
-                             }) {
-                                 Text("Maximum hours")
-                             }
-                         }
-                     }*/
                         VStack {
                             Text("Political Quiz")
                                 .frame(width: 300)
