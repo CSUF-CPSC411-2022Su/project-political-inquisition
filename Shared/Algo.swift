@@ -9,12 +9,11 @@ import Foundation
 
 struct algo
 {
-    //Want to keep track of the user's choices
     
-    //Using a dictionary with the question number as key
-    //and answer as weight value to start aligning user's preferences
-    // -1 is the default, 1 Is agree, 0 Is disagree
-    
+    //This algo needs to do the following
+    //1. Get the answers of the quiz the user answered
+    //2. Store the answers for the user
+    //3. Try to align user to canidates based on results
     
     var compass [1: -1, 2: -1, 3: -1]
 }

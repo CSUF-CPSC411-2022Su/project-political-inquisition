@@ -23,8 +23,6 @@ struct ContentView: View {
                                 .background(Color.black)
                                 
                                 HStack {
-                                    //List {
-                                    // Section(header: Text("Gun Control Legislation"))
                                     Text("Gun Control Legislation: ")
                                     Button(action: {
                                         print("I am for Gun Control")
