@@ -9,13 +9,38 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        Text("Political IniquistionApp")
             .padding()
+        
+        Text("Rank")
+            .padding()
+        RankView()
     }
+}
+
+struct RankView: View{
+    
+    var body: some View {
+        VStack {
+            Text("How do you support the candidate?")
+                .padding()
+            Text("* * * * *")
+                .padding()
+        }
+        HStack {
+            Text("Comment")
+  //          Button(action: {
+   //             print("Comment")
+ //           })
+  //          Text("OK")
+ //       } .padding()
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
 }
