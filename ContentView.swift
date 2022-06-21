@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  Political Iniquisition (iOS)
+//  Shared
 //
-//  Created by csuftitan on 6/13/22.
+//  Created by csuftitan on 6/8/22.
 //
 
 import SwiftUI
@@ -10,53 +10,100 @@ import SwiftUI
 struct ContentView: View {
     @State var name: String = ""
     @State var address: String = ""
-    @State var age: String = ""
+    @State var quiz = Algo()
     
     var body: some View {
-        VStack {
-            // TODO: Add frame method call to this VStack in
-            // Model 3
-            VStack {
-                Text("Political Inquisition")
-                    .background(Color.red)
-                
-                HStack {
-                    Spacer()
-                    Text("Name: ")
-                    TextField("Name", text: $name)
-                    Spacer()
-                }
-                
-                HStack {
-                    Spacer()
-                    Text("Address: ")
-                    TextField("Address", text: $address)
-                    Spacer()
+                GeometryReader { geometry in
+                    VStack {
+                        VStack {
+                            Text("Political Quiz")
+                                .frame(width: 300)
+                                .font(.custom("Copperplate", size: 40))
+                                .foregroundColor(.white)
+                                .background(Color.black)
+                                
+                                HStack {
+                                    Text("Gun Control Legislation: ")
+                                    Button(action: {
+                                        print("I am for Gun Control")
+                                        quiz.compass[0] = 1
+                                        
+                                    }) {
+                                        Text("For")
+                                    }.padding()
+                                    
+                                    Button(action: {
+                                        print("I am against")
+                                        quiz.compass[0] = -1
+                                        
+                                    }) {
+                                        Text("Against")
+                                    }.padding()
+                                
+                                }
+                            
+                            HStack {
+                                Text("Allow Abortions")
+                                Button(action: {
+                                    print("I am for Abortion")
+                                    quiz.compass[1] = 1
+                                    
+                                }) {
+                                    Text("For")
+                                }.padding()
+                                
+                                Button(action: {
+                                    print("I am against abortion")
+                                    quiz.compass[1] = -1
+                                    
+                                }) {
+                                    Text("Against")
+                                }.padding()
+                            
+                            }
+                            
+                            HStack {
+                                Text("Political Party")
+                                Button(action: {
+                                    print("I am a Democrat")
+                                    quiz.compass[2] = 1
+                                    
+                                }) {
+                                    Text("Democrat")
+                                }.padding()
+                                
+                                Button(action: {
+                                    print("I am a Republican")
+                                    quiz.compass[2] = -1
+                                    
+                                }) {
+                                    Text("Republican")
+                                }.padding()
+                            
+                            }
+                            
+                            
+                            
+                            HStack {
+                                Button(action: {
+                                    //print("I am a Democrat")
+                                    quiz.display()
+                                }) {
+                                    Text("Display")
+                                }.padding()
+                            
+                            }
+                            
+                        }.frame(height: geometry.size.height / 2)
+                        Spacer()
+                    }
                     
-                }
-                HStack {
-                    Spacer()
-                    Text("Age: ")
-                    TextField("Age", text: $age)
-                    Spacer()
-                }
-                
-                
-            }.frame(height: geometry.size.height / 2)
-            Spacer()
-            /* TODO: Replace the entire Text VStack below with
-               sub view provided in Model 2
-             */
-            VStack {
-                Information(name: $name, address: $address, age:$age)
-
-            }
-            }
+                    
+                    
+                    
                 }
     }
 }
-
-// TODO: Add Information structure provided in Model 2
 
 struct Information: View {
     @Binding var name: String
@@ -65,7 +112,17 @@ struct Information: View {
     
     var body: some View {
         Text(name)
+            .bold()
         Text(address)
-        Text(age)
+        HStack{
+            Text("Age: ")
+            Text(age)
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }

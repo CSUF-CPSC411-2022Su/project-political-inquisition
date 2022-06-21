@@ -11,17 +11,11 @@
 		7A53A6EC285148E9000EF315 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A6EB285148E9000EF315 /* Tests_iOSLaunchTests.swift */; };
 		7A53A6F6285148E9000EF315 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A6F5285148E9000EF315 /* Tests_macOS.swift */; };
 		7A53A6F8285148E9000EF315 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A6F7285148E9000EF315 /* Tests_macOSLaunchTests.swift */; };
-		7A53A6F9285148E9000EF315 /* Political_IniquisitionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A6D1285148E7000EF315 /* Political_IniquisitionApp.swift */; };
-		7A53A6FA285148E9000EF315 /* Political_IniquisitionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A6D1285148E7000EF315 /* Political_IniquisitionApp.swift */; };
-		7A53A6FB285148E9000EF315 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A6D2285148E7000EF315 /* ContentView.swift */; };
-		7A53A6FC285148E9000EF315 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A6D2285148E7000EF315 /* ContentView.swift */; };
-		7A53A6FD285148E9000EF315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A53A6D3285148E9000EF315 /* Assets.xcassets */; };
-		7A53A6FE285148E9000EF315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A53A6D3285148E9000EF315 /* Assets.xcassets */; };
 		7A53A70E285149E5000EF315 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7A53A70D285149E5000EF315 /* .gitignore */; };
 		7A53A71028514A1D000EF315 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 7A53A70F28514A1D000EF315 /* .gitattributes */; };
-		7A53A71228514DB9000EF315 /* Algo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A71128514DB9000EF315 /* Algo.swift */; };
 		7A53A7562857FF97000EF315 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A7552857FF97000EF315 /* ContentView.swift */; };
 		7A53A75828595C19000EF315 /* PoliticalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A75728595C19000EF315 /* PoliticalApp.swift */; };
+		7A53A75A28617DAE000EF315 /* Algo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A75928617DAE000EF315 /* Algo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7A53A6D1285148E7000EF315 /* Political_IniquisitionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Political_IniquisitionApp.swift; sourceTree = "<group>"; };
-		7A53A6D2285148E7000EF315 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7A53A6D3285148E9000EF315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A53A6D8285148E9000EF315 /* Political Iniquisition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Political Iniquisition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A53A6DE285148E9000EF315 /* Political Iniquisition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Political Iniquisition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A53A6E0285148E9000EF315 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
@@ -56,9 +47,9 @@
 		7A53A6F7285148E9000EF315 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		7A53A70D285149E5000EF315 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7A53A70F28514A1D000EF315 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
-		7A53A71128514DB9000EF315 /* Algo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algo.swift; sourceTree = "<group>"; };
 		7A53A7552857FF97000EF315 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A53A75728595C19000EF315 /* PoliticalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticalApp.swift; sourceTree = "<group>"; };
+		7A53A75928617DAE000EF315 /* Algo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,27 +87,16 @@
 		7A53A6CB285148E7000EF315 = {
 			isa = PBXGroup;
 			children = (
+				7A53A75928617DAE000EF315 /* Algo.swift */,
 				7A53A75728595C19000EF315 /* PoliticalApp.swift */,
 				7A53A7552857FF97000EF315 /* ContentView.swift */,
 				7A53A70F28514A1D000EF315 /* .gitattributes */,
 				7A53A70D285149E5000EF315 /* .gitignore */,
-				7A53A6D0285148E7000EF315 /* Shared */,
 				7A53A6DF285148E9000EF315 /* macOS */,
 				7A53A6E8285148E9000EF315 /* Tests iOS */,
 				7A53A6F4285148E9000EF315 /* Tests macOS */,
 				7A53A6D9285148E9000EF315 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		7A53A6D0285148E7000EF315 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				7A53A71128514DB9000EF315 /* Algo.swift */,
-				7A53A6D1285148E7000EF315 /* Political_IniquisitionApp.swift */,
-				7A53A6D2285148E7000EF315 /* ContentView.swift */,
-				7A53A6D3285148E9000EF315 /* Assets.xcassets */,
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		7A53A6D9285148E9000EF315 /* Products */ = {
@@ -283,7 +263,6 @@
 			files = (
 				7A53A70E285149E5000EF315 /* .gitignore in Resources */,
 				7A53A71028514A1D000EF315 /* .gitattributes in Resources */,
-				7A53A6FD285148E9000EF315 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +270,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A53A6FE285148E9000EF315 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,11 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A53A71228514DB9000EF315 /* Algo.swift in Sources */,
-				7A53A6FB285148E9000EF315 /* ContentView.swift in Sources */,
+				7A53A75A28617DAE000EF315 /* Algo.swift in Sources */,
 				7A53A7562857FF97000EF315 /* ContentView.swift in Sources */,
 				7A53A75828595C19000EF315 /* PoliticalApp.swift in Sources */,
-				7A53A6F9285148E9000EF315 /* Political_IniquisitionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,8 +304,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A53A6FC285148E9000EF315 /* ContentView.swift in Sources */,
-				7A53A6FA285148E9000EF315 /* Political_IniquisitionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,7 +611,6 @@
 		7A53A70B285148E9000EF315 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DPPYL76N85;
@@ -656,7 +629,6 @@
 		7A53A70C285148E9000EF315 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DPPYL76N85;
