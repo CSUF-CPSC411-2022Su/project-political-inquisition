@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Algo
+class Algo : ObservableObject
 {
     
     //This algo needs to do the following
@@ -16,11 +16,11 @@ struct Algo
     //2. Store the answers for the user
     //3. Try to align user to canidates based on results
     
-    var compass = [1: 0, 2: 0, 3: 0]
+    var compass = [1: 0, 2: 0, 3: 0, 4: 0]
     
     
     
-    func display(){
+    func display() -> String{
         var conclusion : Int = 0
             for (_, value) in compass{
                 if value != 0{
@@ -29,11 +29,11 @@ struct Algo
             
             }
         if conclusion < 0{
-            print("Based on your answers you are more Right leaning")
+            return "Based on your answers you are more Right leaning"
         }
         
         else{
-            print("Based on your answers you are more Left leaning")
+            return "Based on your answers you are more Left leaning"
         }
             
     }
