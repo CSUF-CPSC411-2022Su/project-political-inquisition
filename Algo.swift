@@ -28,13 +28,7 @@ class Algo : ObservableObject
                 }
             
             }
-        if conclusion < 0{
-            return "Based on your answers you are more Right leaning"
-        }
-        
-        else{
-            return "Based on your answers you are more Left leaning"
-        }
+        return "Based on your answers your rank is \(conclusion)"
             
     }
 }

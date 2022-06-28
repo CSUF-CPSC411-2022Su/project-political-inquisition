@@ -134,6 +134,6 @@ struct RankText3: ViewModifier {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentViewAlgo()
+        ContentView()
     }
 }

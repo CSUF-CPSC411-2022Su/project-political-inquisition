@@ -18,6 +18,8 @@
 		7A53A75A28617DAE000EF315 /* Algo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A75928617DAE000EF315 /* Algo.swift */; };
 		7AA1CDC02869333000D71C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA1CDBF2869333000D71C48 /* Assets.xcassets */; };
 		7ADFEAA5286BA64100C94C3B /* ResultViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFEAA4286BA64100C94C3B /* ResultViews.swift */; };
+		7ADFEAAC286BC48200C94C3B /* Shared in Resources */ = {isa = PBXBuildFile; fileRef = 7ADFEAAB286BC48200C94C3B /* Shared */; };
+		7ADFEAAE286BC7C500C94C3B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ADFEAAD286BC7C500C94C3B /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		7A53A75928617DAE000EF315 /* Algo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algo.swift; sourceTree = "<group>"; };
 		7AA1CDBF2869333000D71C48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../labex-07-chrisrod46/Profile/Assets.xcassets"; sourceTree = "<group>"; };
 		7ADFEAA4286BA64100C94C3B /* ResultViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViews.swift; sourceTree = "<group>"; };
+		7ADFEAAB286BC48200C94C3B /* Shared */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Shared; sourceTree = "<group>"; };
+		7ADFEAAD286BC7C500C94C3B /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 		7A53A6CB285148E7000EF315 = {
 			isa = PBXGroup;
 			children = (
+				7ADFEAAD286BC7C500C94C3B /* Media.xcassets */,
 				7ADFEAA4286BA64100C94C3B /* ResultViews.swift */,
 				7A53A75928617DAE000EF315 /* Algo.swift */,
 				7A53A75728595C19000EF315 /* PoliticalApp.swift */,
@@ -98,6 +103,7 @@
 				7AA1CDBF2869333000D71C48 /* Assets.xcassets */,
 				7A53A70F28514A1D000EF315 /* .gitattributes */,
 				7A53A70D285149E5000EF315 /* .gitignore */,
+				7ADFEAAB286BC48200C94C3B /* Shared */,
 				7A53A6DF285148E9000EF315 /* macOS */,
 				7A53A6E8285148E9000EF315 /* Tests iOS */,
 				7A53A6F4285148E9000EF315 /* Tests macOS */,
@@ -267,7 +273,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADFEAAE286BC7C500C94C3B /* Media.xcassets in Resources */,
 				7A53A70E285149E5000EF315 /* .gitignore in Resources */,
+				7ADFEAAC286BC48200C94C3B /* Shared in Resources */,
 				7AA1CDC02869333000D71C48 /* Assets.xcassets in Resources */,
 				7A53A71028514A1D000EF315 /* .gitattributes in Resources */,
 			);
@@ -461,8 +469,8 @@
 		7A53A702285148E9000EF315 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DPPYL76N85;
@@ -491,8 +499,8 @@
 		7A53A703285148E9000EF315 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DPPYL76N85;

@@ -12,7 +12,7 @@ struct ContentViewAlgo: View {
     @StateObject var quiz = Algo()
     
     var body: some View{
-        Image("oranges")
+        Image("Oranges")
         .resizable()
         .scaledToFit()
         .frame(width: 100)
@@ -28,6 +28,14 @@ struct ContentViewAlgo: View {
                             Image(systemName: "info")
                             Text("Quiz")
                         }
+            
+            
+            ContentViewCand()
+                .tabItem {
+                            Image(systemName: "info")
+                            Text("Cand")
+                        }
+            
                     Result()
                 .tabItem {
                     Image(systemName: "info")
