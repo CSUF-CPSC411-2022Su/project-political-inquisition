@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @StateObject var quiz = Algo()
+    
     var body: some View{
         Image("oranges")
         .resizable()
