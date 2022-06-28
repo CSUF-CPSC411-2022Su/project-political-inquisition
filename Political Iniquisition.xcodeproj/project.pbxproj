@@ -13,7 +13,7 @@
 		7A53A6F8285148E9000EF315 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A6F7285148E9000EF315 /* Tests_macOSLaunchTests.swift */; };
 		7A53A70E285149E5000EF315 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7A53A70D285149E5000EF315 /* .gitignore */; };
 		7A53A71028514A1D000EF315 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 7A53A70F28514A1D000EF315 /* .gitattributes */; };
-		7A53A7562857FF97000EF315 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A7552857FF97000EF315 /* ContentView2.swift */; };
+		7A53A7562857FF97000EF315 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A7552857FF97000EF315 /* ContentView.swift */; };
 		7A53A75828595C19000EF315 /* PoliticalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A75728595C19000EF315 /* PoliticalApp.swift */; };
 		7A53A75A28617DAE000EF315 /* Algo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A75928617DAE000EF315 /* Algo.swift */; };
 		7AA1CDC02869333000D71C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA1CDBF2869333000D71C48 /* Assets.xcassets */; };
@@ -49,7 +49,7 @@
 		7A53A6F7285148E9000EF315 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		7A53A70D285149E5000EF315 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7A53A70F28514A1D000EF315 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
-		7A53A7552857FF97000EF315 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
+		7A53A7552857FF97000EF315 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A53A75728595C19000EF315 /* PoliticalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticalApp.swift; sourceTree = "<group>"; };
 		7A53A75928617DAE000EF315 /* Algo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algo.swift; sourceTree = "<group>"; };
 		7AA1CDBF2869333000D71C48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../labex-07-chrisrod46/Profile/Assets.xcassets"; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				7ADFEAA4286BA64100C94C3B /* ResultViews.swift */,
 				7A53A75928617DAE000EF315 /* Algo.swift */,
 				7A53A75728595C19000EF315 /* PoliticalApp.swift */,
-				7A53A7552857FF97000EF315 /* ContentView2.swift */,
+				7A53A7552857FF97000EF315 /* ContentView.swift */,
 				7AA1CDBF2869333000D71C48 /* Assets.xcassets */,
 				7A53A70F28514A1D000EF315 /* .gitattributes */,
 				7A53A70D285149E5000EF315 /* .gitignore */,
@@ -303,7 +303,7 @@
 			files = (
 				7A53A75A28617DAE000EF315 /* Algo.swift in Sources */,
 				7ADFEAA5286BA64100C94C3B /* ResultViews.swift in Sources */,
-				7A53A7562857FF97000EF315 /* ContentView2.swift in Sources */,
+				7A53A7562857FF97000EF315 /* ContentView.swift in Sources */,
 				7A53A75828595C19000EF315 /* PoliticalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
