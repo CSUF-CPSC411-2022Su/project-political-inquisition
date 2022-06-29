@@ -8,10 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
+    @StateObject var manager = MapManager(Pollsite: "", zip: "")
+        var body: some View {
+            
+            TabView {
+                        AddressInput()
+                            .tabItem {
+                                Image(systemName: "mappin.and.ellipse")
+                                Text("Input ZIP")
+                            }
+                            
+                        viewPollingPlace()
+                            .tabItem{
+                                Image(systemName: "car")
+                                Text("Find your site")
+                            }
+                
+                    }.environmentObject(manager)
+
+        }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
