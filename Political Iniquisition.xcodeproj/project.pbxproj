@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		178C9E71286BF45100E47C9C /* oc.png in Resources */ = {isa = PBXBuildFile; fileRef = 178C9E70286BF45100E47C9C /* oc.png */; };
+		178C9E72286BF45100E47C9C /* oc.png in Resources */ = {isa = PBXBuildFile; fileRef = 178C9E70286BF45100E47C9C /* oc.png */; };
 		7A53A6EA285148E9000EF315 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A6E9285148E9000EF315 /* Tests_iOS.swift */; };
 		7A53A6EC285148E9000EF315 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A6EB285148E9000EF315 /* Tests_iOSLaunchTests.swift */; };
 		7A53A6F6285148E9000EF315 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A6F5285148E9000EF315 /* Tests_macOS.swift */; };
@@ -39,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		178C9E70286BF45100E47C9C /* oc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = oc.png; path = ../../Downloads/oc.png; sourceTree = "<group>"; };
 		7A53A6D1285148E7000EF315 /* Political_IniquisitionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Political_IniquisitionApp.swift; sourceTree = "<group>"; };
 		7A53A6D2285148E7000EF315 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A53A6D3285148E9000EF315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,6 +93,7 @@
 		7A53A6CB285148E7000EF315 = {
 			isa = PBXGroup;
 			children = (
+				178C9E70286BF45100E47C9C /* oc.png */,
 				7A53A70F28514A1D000EF315 /* .gitattributes */,
 				7A53A70D285149E5000EF315 /* .gitignore */,
 				7A53A6D0285148E7000EF315 /* Shared */,
@@ -275,6 +279,7 @@
 				7A53A70E285149E5000EF315 /* .gitignore in Resources */,
 				7A53A71028514A1D000EF315 /* .gitattributes in Resources */,
 				7A53A6FD285148E9000EF315 /* Assets.xcassets in Resources */,
+				178C9E71286BF45100E47C9C /* oc.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A53A6FE285148E9000EF315 /* Assets.xcassets in Resources */,
+				178C9E72286BF45100E47C9C /* oc.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

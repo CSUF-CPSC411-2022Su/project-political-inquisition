@@ -7,124 +7,92 @@
 
 import SwiftUI
 
-
-struct MenuItem: Identifiable {
-    var id = UUID()
-    let text: String
-    let imageName: String
-    let handler: () -> Void = {
-        print("tapped Item")
-    }
-}
-
-
-struct MenuContent: View {
-    let items: [MenuItem] = [
-        MenuItem (text: "Home",imageName:  "house"),
-        MenuItem (text: "Questionaire",imageName:  "house"),
-        MenuItem (text: "Stuff", imageName:  "house")
-    ]
-    
-    var body: some View {
-        ZStack {
-            Color(UIColor(red: 33/255.0, green: 33/255.0, blue: 33/255.0, alpha: 1))
-            
-            VStack(alignment: .leading, spacing: 0) {
-                ForEach(items) { item in
-                    HStack{
-                        Image(systemName: item.imageName)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .foregroundColor(Color.white)
-                            .frame(width: 32, height: 32, alignment: .center)
-                        
-                        Text(item.text)
-                            .foregroundColor(Color.white)
-                            .bold()
-                            .font(.system(size: 22))
-                            .multilineTextAlignment(.leading)
-                        Spacer()
-                    }
-                    .onTapGesture {
-                        
-                    }
-                    .padding()
-                    
-                    Divider()
-                }
-                
-                Spacer()
-            }
-            .padding(.top, 40)
-        }
-    }
-}
-
-struct SideMenu: View {
-    let width: CGFloat
-    let menuOpened: Bool
-    let toggleMenu: () -> Void
-    
-    
-    var body: some View {
-        ZStack {
-            // background
-            GeometryReader { _ in
-                EmptyView()
-                
-            }
-            .background(Color.gray.opacity(0.5))
-            .opacity(self.menuOpened ? 1 : 0)
-          //  .animation(Animation.easeIn.delay(0.25))
-            .onTapGesture {
-                self.toggleMenu()
-            }
-            //menustuff
-            HStack {
-                MenuContent()
-                    .frame(width: width)
-                    .offset(x: menuOpened ? 0 : -width)
-              //      .animation(.default)
-                
-                
-                Spacer()
-            }
-            
-        }
-    }
-}
-
-
 struct ContentView: View {
-    @State var menuOpened = false
+    @State var selectedTab: Int = 0
     
     var body: some View {
-        ZStack {
-            if !menuOpened {
-            Button(action : {
-                self.menuOpened.toggle()
-            }, label: {
-                Text("Open Menu")
-                    .bold()
-                    .foregroundColor(Color.white)
-                    .frame(width: 200, height: 50, alignment: .center)
-                    .background(Color(.systemBlue))
-            })
-            }
-            SideMenu(width: UIScreen.main.bounds.width/1.6,
-            menuOpened: menuOpened,
-            toggleMenu: toggleMenu)
+        TabView(selection: $selectedTab) {
+           
+            HomeView(selectedTab: $selectedTab)
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("Home")
         }
-        .edgesIgnoringSafeArea(.all)
-    }
-    func toggleMenu() {
-        menuOpened.toggle()
-    }
+        .tag(0)
+                
+            Text("QUIZ PAGE")
+                .tabItem {
+                    Image(systemName: "questionmark.circle")
+                    Text("Quiz")
+        }
+        .tag(1)
+            
+            Text("Other")
+                .tabItem {
+                    Image(systemName: "doc.on.clipboard")
+                    Text("Results")
+        }
+        .tag(2)
+            
+            Text("Locator Page")
+                .tabItem {
+                    Image(systemName: "mappin.and.ellipse")
+                    Text("Locator")
+                }
+                .tag(3)
+            
+            Text("About")
+                .tabItem {
+                    Image(systemName: "questionmark")
+                    Text("About")
+                }
+            
+           
+        }.accentColor(.blue)
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .preferredColorScheme(.dark)
     }
+}
+
+    struct HomeView: View {
+        
+        @Binding var selectedTab: Int
+        
+        var body: some View {
+            ZStack {
+                Color.white.ignoresSafeArea()
+                Text("Political Inquisition")
+                    .font(.largeTitle)
+                    .padding(.bottom, 720)
+                
+                Image("oc")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 275)
+                    .padding(.bottom, 350)
+                VStack{
+    
+            Text("Which Candidate is best for you?")
+                        .padding(.top, 200)
+                        .font(.system(size: 23.0).bold())
+                    .foregroundColor(.black)
+                    
+                Button(action: {
+                    selectedTab = 1
+                }, label: {
+                    Text("Take Quiz")
+                        .font(.headline)
+                        .padding()
+                        .padding(.horizontal)
+                        .background(Color.black.opacity(0.2))
+                        .hoverEffect(.highlight)
+                        .cornerRadius(10)
+            })
+        }
+    }
+    }
+}
 }
