@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentViewAlgo: View {
     
-    @StateObject var quiz = Algo()
+    @StateObject var quiz = Algo(zip: "")
+    //@StateObject var manager = MapManager(Pollsite: "", zip: "")
     
     var body: some View{
         Image("Oranges")
@@ -41,6 +42,20 @@ struct ContentViewAlgo: View {
                     Image(systemName: "info")
                     Text("Result")
                 }
+            
+            AddressInput()
+                .tabItem {
+                    Image(systemName: "mappin.and.ellipse")
+                    Text("Input ZIP")
+                }
+                
+            viewPollingPlace()
+                .tabItem{
+                    Image(systemName: "car")
+                    Text("Find your site")
+                }
+            
+            
 
         }.environmentObject(quiz)
         

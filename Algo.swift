@@ -18,7 +18,26 @@ class Algo : ObservableObject
     
     var compass = [1: 0, 2: 0, 3: 0, 4: 0]
     
+    //storing written data in text box
+    @Published var Map: [Address] = []
+    //storing zip code in string
+    @Published var zip: String = ""
     
+    //switching the zip code based on users input zip
+    var pAddy: String {
+        switch zip {
+            //add in all the zips, this is probably a terrible and slow way to do this but it's how i thought to do it right now
+            case "92886": return "4501 Casa Loma Ave, Yorba Linda, CA 92886"
+            case "92808": return "8201 E Santa Ana Canyon Rd, Anaheim, CA 92808"
+            
+            default: return ". There are no polling places near you."
+        }
+    }
+    //init for the zip string and the address struct
+    init(zip: String) {
+        self.zip = zip
+        Map.append(Address(ZIP: "92886"))
+    }
     
     func display() -> String{
         var conclusion : Int = 0
@@ -31,4 +50,11 @@ class Algo : ObservableObject
         return "Based on your answers your rank is \(conclusion)"
             
     }
+}
+
+
+struct Address: Identifiable {
+    var id = UUID()
+    var ZIP: String
+    
 }

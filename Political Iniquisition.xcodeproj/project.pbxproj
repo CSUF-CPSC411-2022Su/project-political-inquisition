@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A011E76286BF3DA004DC00C /* MoreViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A011E75286BF3DA004DC00C /* MoreViews.swift */; };
+		7A011E78286BF400004DC00C /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A011E77286BF400004DC00C /* Modifiers.swift */; };
 		7A53A6EA285148E9000EF315 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A6E9285148E9000EF315 /* Tests_iOS.swift */; };
 		7A53A6EC285148E9000EF315 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A6EB285148E9000EF315 /* Tests_iOSLaunchTests.swift */; };
 		7A53A6F6285148E9000EF315 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A6F5285148E9000EF315 /* Tests_macOS.swift */; };
@@ -16,7 +18,6 @@
 		7A53A7562857FF97000EF315 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A7552857FF97000EF315 /* ContentView.swift */; };
 		7A53A75828595C19000EF315 /* PoliticalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A75728595C19000EF315 /* PoliticalApp.swift */; };
 		7A53A75A28617DAE000EF315 /* Algo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A75928617DAE000EF315 /* Algo.swift */; };
-		7AA1CDC02869333000D71C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA1CDBF2869333000D71C48 /* Assets.xcassets */; };
 		7ADFEAA5286BA64100C94C3B /* ResultViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFEAA4286BA64100C94C3B /* ResultViews.swift */; };
 		7ADFEAAC286BC48200C94C3B /* Shared in Resources */ = {isa = PBXBuildFile; fileRef = 7ADFEAAB286BC48200C94C3B /* Shared */; };
 		7ADFEAAE286BC7C500C94C3B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ADFEAAD286BC7C500C94C3B /* Media.xcassets */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A011E75286BF3DA004DC00C /* MoreViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViews.swift; sourceTree = "<group>"; };
+		7A011E77286BF400004DC00C /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		7A53A6D8285148E9000EF315 /* Political Iniquisition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Political Iniquisition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A53A6DE285148E9000EF315 /* Political Iniquisition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Political Iniquisition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A53A6E0285148E9000EF315 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
@@ -54,7 +57,6 @@
 		7A53A7552857FF97000EF315 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A53A75728595C19000EF315 /* PoliticalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticalApp.swift; sourceTree = "<group>"; };
 		7A53A75928617DAE000EF315 /* Algo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algo.swift; sourceTree = "<group>"; };
-		7AA1CDBF2869333000D71C48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../labex-07-chrisrod46/Profile/Assets.xcassets"; sourceTree = "<group>"; };
 		7ADFEAA4286BA64100C94C3B /* ResultViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViews.swift; sourceTree = "<group>"; };
 		7ADFEAAB286BC48200C94C3B /* Shared */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Shared; sourceTree = "<group>"; };
 		7ADFEAAD286BC7C500C94C3B /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -100,7 +102,8 @@
 				7A53A75928617DAE000EF315 /* Algo.swift */,
 				7A53A75728595C19000EF315 /* PoliticalApp.swift */,
 				7A53A7552857FF97000EF315 /* ContentView.swift */,
-				7AA1CDBF2869333000D71C48 /* Assets.xcassets */,
+				7A011E75286BF3DA004DC00C /* MoreViews.swift */,
+				7A011E77286BF400004DC00C /* Modifiers.swift */,
 				7A53A70F28514A1D000EF315 /* .gitattributes */,
 				7A53A70D285149E5000EF315 /* .gitignore */,
 				7ADFEAAB286BC48200C94C3B /* Shared */,
@@ -276,7 +279,6 @@
 				7ADFEAAE286BC7C500C94C3B /* Media.xcassets in Resources */,
 				7A53A70E285149E5000EF315 /* .gitignore in Resources */,
 				7ADFEAAC286BC48200C94C3B /* Shared in Resources */,
-				7AA1CDC02869333000D71C48 /* Assets.xcassets in Resources */,
 				7A53A71028514A1D000EF315 /* .gitattributes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,9 +311,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A011E76286BF3DA004DC00C /* MoreViews.swift in Sources */,
 				7A53A75A28617DAE000EF315 /* Algo.swift in Sources */,
 				7ADFEAA5286BA64100C94C3B /* ResultViews.swift in Sources */,
 				7A53A7562857FF97000EF315 /* ContentView.swift in Sources */,
+				7A011E78286BF400004DC00C /* Modifiers.swift in Sources */,
 				7A53A75828595C19000EF315 /* PoliticalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
