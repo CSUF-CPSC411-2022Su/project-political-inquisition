@@ -33,7 +33,7 @@ struct AddressInput: View {
                 }
                 
                 Button(action: {
-                    //manager.Map.append(Address(Street: userStreet, ZIP: userZIP))
+                    //manager.Map.append(Address(ZIP: userZIP))
                     manager.zip = userZIP
                     //userStreet = ""
                     userZIP = ""
@@ -42,14 +42,60 @@ struct AddressInput: View {
                     Text("Submit")
                         .modifier(ButtonDesign())
                 }
-                Spacer()
+                
+                //display address
+                HStack {
+                    Text("Your polling site is located at \(manager.pAddy)")
+                    .bold()
+                    .font(.largeTitle)
+                }
+
+               
             }
             .padding()
+            
+            
+            
         }
     }
 }
 
-struct viewPollingPlace: View {
+struct viewCandidateList: View {
+    
+    @EnvironmentObject var manager: Algo
+    //@State var zip: Int
+    
+    var body: some View {
+        NavigationView {
+            List {
+                ForEach(manager.Candis) {
+                    candidate in
+                    VStack (alignment: .leading) {
+                        
+                        NavigationLink(destination: Text(candidate.info)) {
+                            Text(candidate.name)
+                                .font(.largeTitle)
+                                
+                        }
+                        /*Text(candidate.name)
+                            .font(.largeTitle)
+                        HStack{
+                        Text(candidate.party)
+                            .font(.caption)
+                        Text(candidate.age)
+                            .font(.caption)
+                        }*/
+                    }
+                }
+                
+            }
+            
+            }
+        }
+    }
+
+
+/*struct viewPollingPlace: View {
     
     @EnvironmentObject var manager: Algo
     //@State var zip: Int
@@ -66,7 +112,7 @@ struct viewPollingPlace: View {
             }
         }
     }
-}
+}*/
 
 
 

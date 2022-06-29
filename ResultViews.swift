@@ -12,9 +12,10 @@ import SwiftUI
 struct ContentViewCand: View {
     @State var name: String = ""
     @State var age: String = ""
-    @State var district = ""
+    @State var party = ""
     @State var rank: String = ""
     @State var comment: String = ""
+    @EnvironmentObject var addDudes: Algo
     var body: some View {
         GeometryReader  { geometry in
         VStack {
@@ -40,9 +41,9 @@ struct ContentViewCand: View {
                 
                 HStack {
                     Spacer()
-                    Text("District Area: ")
+                    Text("Party: ")
                         .modifier(RankText3())
-                    TextField("District Area", text: $district)
+                    TextField("Party", text: $party)
                     Spacer()
                 }
                 
@@ -54,17 +55,27 @@ struct ContentViewCand: View {
             }
             
             VStack {
-                Information (name: $name, age: $age, district: $district, rank: $rank, comment: $comment)
+                Information (name: $name, age: $age, party: $party, rank: $rank, comment: $comment)
             }
+            Button(action: {
+                addDudes.Candis.append(Dudes(name: name, age: age, party: party, info: ""))
+                name = ""
+                age = ""
+                party = ""
+                
+            }) {
+                Text("Submit")
+                    .modifier(ButtonDesign())
+            }
+            
             }
         }
     }
 }
-
 struct Information: View {
     @Binding var name: String
     @Binding var age: String
-    @Binding var district: String
+    @Binding var party: String
     @Binding var rank: String
     @Binding var comment: String
     var body: some View {
@@ -161,6 +172,7 @@ struct Result: View {
 
 struct QuizView: View {
     @EnvironmentObject var quiz: Algo
+    @State  var result : String = ""
     var body: some View {
                 GeometryReader { geometry in
                     VStack {
@@ -234,10 +246,27 @@ struct QuizView: View {
                             
                             }
                             
+                            
+                            
+                            VStack {
+                                
+                                Button(action: {
+                                    
+                                    result = quiz.display()
+                                    
+                                }) {
+                                    Text("Display")
+                                }.padding()
+                                
+                                if result != ""{
+                                Text(quiz.display())
+                                }
+                            }
+                            
                         }.frame(height: geometry.size.height / 2)
                         Spacer()
                     }
                 }
+        }
     }
-}
 

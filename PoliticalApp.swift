@@ -11,7 +11,7 @@ import SwiftUI
 struct Political_IniquisitionApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentViewAlgo()
+            ContentView()
         }
     }
 }
