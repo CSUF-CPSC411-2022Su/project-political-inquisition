@@ -12,12 +12,18 @@ struct AddressInput: View {
     @SceneStorage("userZIP") var userZIP: String = ""
     @EnvironmentObject var manager: Algo
     var body: some View {
+        VStack{
+            Text("Input your ZIP Code")
+                .bold()
+                .font(.largeTitle)
+                .padding(.top,100)
         NavigationView {
             VStack {
                 HStack {
-                Text("Input your ZIP Code")
-                    .bold()
-                    .font(.largeTitle)
+                //Text("Input your ZIP Code")
+                  //  .bold()
+                  //  .font(.largeTitle)
+                    
                 }
                 //ZIP input
                 HStack {
@@ -41,6 +47,7 @@ struct AddressInput: View {
                 }) {
                     Text("Submit")
                         .modifier(ButtonDesign())
+                        .padding(.bottom,50)
                 }
                 
                 //display address
@@ -51,7 +58,7 @@ struct AddressInput: View {
                 }
 
                
-            }
+            }}
             .padding()
             
             
@@ -66,6 +73,9 @@ struct viewCandidateList: View {
     //@State var zip: Int
     
     var body: some View {
+        VStack{
+            Text("Candidates:")
+                .font(.largeTitle.bold())
         NavigationView {
             List {
                 ForEach(manager.Candis) {
@@ -74,9 +84,9 @@ struct viewCandidateList: View {
                         
                         NavigationLink(destination: Text(candidate.info)) {
                             Text(candidate.name)
-                                .font(.largeTitle)
+                                .font(.title)
                                 
-                        }
+                        }}
                         /*Text(candidate.name)
                             .font(.largeTitle)
                         HStack{

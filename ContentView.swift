@@ -72,7 +72,7 @@ struct ContentView: View {
                 Color.white.ignoresSafeArea()
                 Text("Political Inquisition")
                     .font(.largeTitle)
-                    .padding(.bottom, 720)
+                    .padding(.bottom, 690)
                 
                 Image("oc")
                     .resizable()
@@ -109,6 +109,9 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+            ContentView()
+        }
     }
 }
